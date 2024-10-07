@@ -1,5 +1,5 @@
-const decodeTheRing = function (s, p) {
-    const m = message.length;
+const decodeTheRing = function (message, pattern) {
+  const m = message.length;
   const p = pattern.length;
 
   const dp = Array(m + 1)
@@ -25,6 +25,6 @@ const decodeTheRing = function (s, p) {
   }
 
   return dp[m][p];
-  };
-  
-  module.exports = decodeTheRing;
+};
+
+module.exports = decodeTheRing;
